@@ -10,7 +10,7 @@ Gymsurf is a beginner-friendly fitness application that aims to provide guidance
 
 ## Getting Started
 
--> Clone the repository: git clone (https://github.com/your-username/Gymsurf.git)
+-> Clone the repository: git clone (https://github.com/ShantanuKudva/Gymsurf.git)
 -> Install dependencies: npm install
 -> Start the development server: npm start
 -> Access the application locally at: (http://localhost:3000)
