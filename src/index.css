@@ -91,6 +91,18 @@
 .button-grid {
   @apply col-span-full grid grid-cols-5 gap-3;
 }
+
+.program-form {
+  @apply mx-auto grid grid-cols-2 gap-2 mt-20 h-96 w-[80%];
+}
+
+.program-responsive-img {
+  @apply h-80;
+}
+
+.pdf-view {
+  @apply border border-black rounded-lg mb-2 m-auto bg-black w-[80%];
+}
 /* Styles for medium screens (481px to 768px) */
 @media (min-width: 481px) and (max-width: 800px) {
   /* CSS rules for medium screens */
@@ -144,6 +156,13 @@
 
   .button-grid {
     @apply col-span-full grid grid-cols-4 gap-2;
+  }
+  .program-form {
+    @apply mx-auto grid grid-cols-2 gap-2 mt-10 w-3/4 mb-10;
+  }
+
+  .pdf-view {
+    @apply border border-black rounded-lg mb-2 m-auto bg-black w-[80%] mt-5;
   }
 }
 /* Styles for small screens (up to 480px) */
@@ -210,5 +229,9 @@
   }
   .button-grid {
     @apply col-span-full grid grid-cols-2 gap-3;
+  }
+
+  .pdf-view {
+    @apply border border-black rounded-lg mb-2 m-auto bg-black w-[90%] mt-10;
   }
 }

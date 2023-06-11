@@ -47,9 +47,12 @@ export default function Programs() {
       exit={{ transition: { duration: 0.5 } }}
     >
       <div>
-        <div className="grid grid-cols-2 ">
-          <div className=" grid w-96 m-auto mt-[5rem]">
-            <Lottie animationData={program} className=" m-auto" />
+        <div className="weight-training-page ">
+          <div className=" grid m-auto mt-[5rem]">
+            <Lottie
+              className="program-responsive-img "
+              animationData={program}
+            />
 
             <div className="m-10">
               <h1 className="text-3xl  font-bold  text-left">
@@ -66,10 +69,7 @@ export default function Programs() {
             </div>
           </div>
 
-          <form
-            className="mx-auto grid grid-cols-2 gap-2 mt-20 h-96 "
-            onSubmit={handleSubmit}
-          >
+          <form className="program-form" onSubmit={handleSubmit}>
             <div className="my-10">
               <h1 className="text-3xl font-bold ">programs.</h1>
             </div>
@@ -134,19 +134,10 @@ export default function Programs() {
             width="50%"
             height="600px"
             title=""
-            className="border border-black rounded-lg mb-2 m-auto bg-black"
+            className="pdf-view"
           />
         )}
       </div>
-      {/* <div ref={pdfRef}>
-        <iframe
-          src={display}
-          width="50%"
-          height="600px"
-          title="PDF Viewer"
-          className="border border-black rounded-lg mb-2 m-auto"
-        />
-      </div> */}
     </motion.div>
   );
 }
