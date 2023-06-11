@@ -56,13 +56,13 @@ export default function Home() {
     >
       {/* left */}
 
-      <div className="grid grid-cols-2 ">
-        <div className=" grid w-96 m-auto mt-[5rem]">
+      <div className="weight-training-page ">
+        <div className=" grid m-auto mt-[5rem]">
           {/* <img
             src={img}
             className="border border-black rounded-3xl m-2 filter grayscale brightness-75"
           /> */}
-          <Lottie animationData={gym} />
+          <Lottie className="responsive-img" animationData={gym} />
 
           <div className="m-10">
             <h1 className="text-3xl  font-bold  text-left">
@@ -80,10 +80,7 @@ export default function Home() {
 
         {/* right */}
 
-        <form
-          className="mx-auto grid grid-cols-5 gap-2 mt-20 "
-          onSubmit={handleSubmit}
-        >
+        <form className="weight-training-form " onSubmit={handleSubmit}>
           <div className="text-left col-span-5">
             <div className="my-10">
               <h1 className="text-4xl font-bold ">weight-training.</h1>
@@ -105,131 +102,133 @@ export default function Home() {
             select exercises based on your required target muscle.
           </h1>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2 weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="pectorals"
-          >
-            chest
-          </button>
+          <div className="button-grid">
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2 weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="pectorals"
+            >
+              chest
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="lats"
-          >
-            lats
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="lats"
+            >
+              lats
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="upper back"
-          >
-            upper-back
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="upper back"
+            >
+              upper-back
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="traps"
-          >
-            traps
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="traps"
+            >
+              traps
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="abs"
-          >
-            abs
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="abs"
+            >
+              abs
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="biceps"
-          >
-            biceps
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="biceps"
+            >
+              biceps
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="delts"
-          >
-            shoulder
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="delts"
+            >
+              shoulder
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="triceps"
-          >
-            triceps
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="triceps"
+            >
+              triceps
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton"
-            onClick={(e) => setPart(e.target.value)}
-            value="hamstrings"
-          >
-            hamstrings
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton"
+              onClick={(e) => setPart(e.target.value)}
+              value="hamstrings"
+            >
+              hamstrings
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton "
-            onClick={(e) => setPart(e.target.value)}
-            value="glutes"
-          >
-            glutes
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton "
+              onClick={(e) => setPart(e.target.value)}
+              value="glutes"
+            >
+              glutes
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton "
-            onClick={(e) => setPart(e.target.value)}
-            value="quads"
-          >
-            quads
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton "
+              onClick={(e) => setPart(e.target.value)}
+              value="quads"
+            >
+              quads
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton "
-            onClick={(e) => setPart(e.target.value)}
-            value="calves"
-          >
-            calves
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton "
+              onClick={(e) => setPart(e.target.value)}
+              value="calves"
+            >
+              calves
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton "
-            onClick={(e) => setPart(e.target.value)}
-            value="forearms"
-          >
-            forearms
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton "
+              onClick={(e) => setPart(e.target.value)}
+              value="forearms"
+            >
+              forearms
+            </button>
 
-          <button
-            type="submit"
-            className="border border-white rounded-l p-2  weightButton "
-            onClick={(e) => setPart(e.target.value)}
-            value="cardiovascular system"
-          >
-            cardio
-          </button>
+            <button
+              type="submit"
+              className="border border-white rounded-l p-2  weightButton "
+              onClick={(e) => setPart(e.target.value)}
+              value="cardiovascular system"
+            >
+              cardio
+            </button>
+          </div>
         </form>
       </div>
 
@@ -245,7 +244,7 @@ export default function Home() {
             Loading {part} exercise...
           </div>
         ) : (
-          <div className="grid grid-cols-3">
+          <div className="weight-training-result">
             {exerciseDiv.slice(0, visible).map((exercise, index) => (
               <div
                 key={index}
@@ -255,7 +254,7 @@ export default function Home() {
                   {index + 1}. {exercise.name}
                 </div>
                 <br />
-                <img src={exercise.gifUrl} className="h-64 m-auto" />
+                <img src={exercise.gifUrl} className="result-img" />
                 <p className="mt-5 text-center">
                   Exercise Equipment -&gt; {exercise.equipment}
                 </p>

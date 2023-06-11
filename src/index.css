@@ -72,6 +72,25 @@
   @apply bg-white text-black;
 }
 
+.weight-training-page {
+  @apply grid grid-cols-2;
+}
+
+.weight-training-form {
+  @apply mx-auto grid grid-cols-5 gap-2 mt-20;
+}
+
+.weight-training-result {
+  @apply grid grid-cols-3;
+}
+
+.result-img {
+  @apply h-64 m-auto;
+}
+
+.button-grid {
+  @apply col-span-full grid grid-cols-5 gap-3;
+}
 /* Styles for medium screens (481px to 768px) */
 @media (min-width: 481px) and (max-width: 800px) {
   /* CSS rules for medium screens */
@@ -97,15 +116,34 @@
     @apply h-full p-7 mx-5;
   }
 
-  .image-grid img {
-  }
-
   .hero-text {
     @apply text-4xl font-bold;
   }
 
   .contact-grid {
     @apply flex flex-col-reverse;
+  }
+
+  .weight-training-page {
+    @apply flex flex-col;
+  }
+
+  .responsive-img {
+    @apply w-72 m-auto;
+  }
+  .weight-training-form {
+    @apply m-auto flex flex-col w-3/4;
+  }
+
+  .weight-training-result {
+    @apply grid grid-cols-2 m-5;
+  }
+  .result-img {
+    @apply h-52;
+  }
+
+  .button-grid {
+    @apply col-span-full grid grid-cols-4 gap-2;
   }
 }
 /* Styles for small screens (up to 480px) */
@@ -152,5 +190,25 @@
 
   .contact-grid {
     @apply flex flex-col-reverse;
+  }
+
+  .weight-training-page {
+    @apply flex flex-col;
+  }
+
+  .responsive-img {
+    @apply w-52 m-auto;
+  }
+  .weight-training-form {
+    @apply m-auto flex flex-col w-4/6;
+  }
+  .weight-training-result {
+    @apply grid grid-cols-1 m-2;
+  }
+  .result-img {
+    @apply h-36;
+  }
+  .button-grid {
+    @apply col-span-full grid grid-cols-2 gap-3;
   }
 }

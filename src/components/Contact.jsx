@@ -49,6 +49,7 @@ function Contact() {
         onSubmit={handleSubmit}
       >
         <input
+          required
           type="text"
           name="user_name"
           placeholder="Your name"
@@ -59,6 +60,7 @@ function Contact() {
           }}
         />
         <input
+          required
           type="email"
           name="user_email"
           placeholder="Your mail"
