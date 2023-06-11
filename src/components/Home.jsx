@@ -10,85 +10,6 @@ import phoneAnimation from "../assets/hand-animation.json";
 import contactRotating from "../assets/Logo rotating.json";
 import Contact from "./Contact.jsx";
 
-// export default function Home() {
-//   return (
-//     <motion.div
-//       className="grid grid-cols-2 scroll-smooth "
-//       initial={{ opacity: 0 }}
-//       animate={{ opacity: 1 }}
-//       exit={{ transition: { duration: 0.5 } }}
-//     >
-//       {/* left */}
-//       <div className=" grid grid-cols-2  p-2  h-[40%]">
-//         <div className=" col-span-full text-center m-auto">
-//           <h1 className="text-4xl font-bold bg-white text-black p-3">
-//             Why GymApp?
-//           </h1>
-//         </div>
-
-//         <div className="m-10 ">
-//           <h1 className="text-3xl my-5 font-bold underline">Get it right.</h1>
-//           <p className="mr-10">
-//             Your one stop solution to help you chase your dream physique.{" "}
-//           </p>
-//         </div>
-
-//         <div className="m-10 ">
-//           <h1 className="text-3xl my-5 font-bold underline">Get it smart.</h1>
-//           <p className="mr-10">
-//             We only share content which is knowledgeable and smart. You can
-//             search for various different exercises for different body parts
-//           </p>
-//         </div>
-
-//         <div className="m-10">
-//           <h1 className="text-3xl my-5 font-bold underline">Get Results.</h1>
-//           <p className="mr-10">
-//             Experience the transformative power of our fitness programs designed
-//             to help you reach your goals.
-//           </p>
-//         </div>
-
-//         <div className="m-10">
-//           <h1 className="text-3xl my-5 font-bold underline">Get Moving.</h1>
-//           <p className="mr-10">
-//             Ignite your energy, find your motivation, and embrace an active
-//             lifestyle with our comprehensive workout routines.
-//           </p>
-//         </div>
-//       </div>
-//       {/* right */}
-//       <div className="mx-auto h-[40%]">
-//         <div className="grid grid-cols-2 h-[40%] ">
-//           {/* {big-} */}
-//           <div className="grid grid-rows-3 ">
-//             <img
-//               src={img1}
-//               className="border border-black rounded-3xl my-10  "
-//             />
-
-//             <img
-//               src={img2}
-//               className="border border-black rounded-3xl  grayscale scale-75 brightness-75"
-//             />
-//           </div>
-
-//           <div className="grid grid-rows-3  gap-2">
-//             <img
-//               src={img4}
-//               className="border border-black rounded-3xl my-10 grayscale scale-75"
-//             />
-//             <img
-//               src={img5}
-//               className="border border-black rounded-3xl my-10  "
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </motion.div>
-//   );
-// }
-
 export default function Home() {
   return (
     <motion.div
@@ -112,13 +33,13 @@ export default function Home() {
         }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-6xl font-bold ">GymSurf.</h1>
+        <h1 className="hero-text">GymSurf.</h1>
         <p className="text-xl font-light ">get going.</p>
       </motion.div>
 
-      <div className="grid grid-cols-2">
+      <div className="home-grid">
         <div className=" grid  m-auto mt-[7rem]">
-          <div className="grid grid-cols-2 mt-5">
+          <div className="text-grid">
             <div className="m-10">
               <h1 className="text-3xl  font-bold  text-left">Get It Right.</h1>
               <p className="text-m font-light ">
@@ -170,7 +91,7 @@ export default function Home() {
         {/* right */}
 
         <div className="mx-auto grid grid-cols-2 gap-2 mt-20 ">
-          <div className="grid grid-flow-row grid-rows-3">
+          <div className="image-grid">
             <img
               src={img1}
               className="border border-black rounded-3xl my-10  row-span-2"
@@ -181,7 +102,7 @@ export default function Home() {
               className="border border-black rounded-3xl  grayscale scale-75 brightness-75"
             />
           </div>
-          <div className="grid grid-flow-row grid-rows-3">
+          <div className="image-grid">
             <img
               src={img4}
               className="border border-black rounded-3xl my-10 grayscale scale-75"
@@ -193,11 +114,9 @@ export default function Home() {
           </div>
         </div>
         <div className="col-span-full text-center my-20 ">
-          <div className="text-4xl font-bold">Got somthing to tell?</div>
-          <div className="text-2xl font-light m-5">
-            Don't hold back, spill the beans!
-          </div>
-          <div className=" grid grid-cols-2 m-10">
+          <div className="hero-text-2">Got somthing to tell?</div>
+          <div className="hero-title-2">Don't hold back, spill the beans!</div>
+          <div className="contact-grid">
             <div>
               <Contact />
             </div>

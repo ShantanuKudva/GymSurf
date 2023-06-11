@@ -79,9 +79,7 @@ function Contact() {
           }}
         />
         <button type="submit" className="text-2xl relative ">
-          <h1 className="font-extralight absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-m mt-10 border border-white p-2 rounded-lg">
-            Send!
-          </h1>
+          <h1 className="send-button">Send!</h1>
         </button>
       </form>
     </motion.div>

@@ -4,16 +4,8 @@
 
 .active {
   background-color: white;
-  /* padding-top: 7rem;
-  padding-bottom: 3.5rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 2px;
-  text-align: center;
-  color: white; */
   font-weight: bold;
-  /* font-size: 20px; */
-  /* text-decoration: underline; */
+  @apply border-2 p-2 border-black;
 }
 
 .weightButton {
@@ -24,4 +16,141 @@
 .weightButton:hover {
   color: black;
   background-color: bisque;
+}
+
+/* navbar styling */
+.navbar {
+  @apply bg-white border-black border-8 fixed top-0 w-full z-50;
+}
+
+.nav-items-responsive {
+  @apply flex justify-between items-center py-7;
+}
+
+.hidden-navbar {
+  @apply p-10 h-full w-60 border-8 bg-white border-black z-[100] text-black top-0 left-0 fixed;
+}
+
+.title-responsive {
+  @apply flex justify-center items-center;
+}
+
+/* home grid styling */
+.image-grid {
+  @apply grid grid-flow-row grid-rows-3;
+}
+
+.image-grid {
+  @apply grid grid-flow-row grid-rows-3;
+}
+
+.home-grid {
+  @apply grid grid-cols-2;
+}
+
+.text-grid {
+  @apply grid grid-cols-2 mt-5 m-5 border border-white;
+}
+
+.hero-text {
+  @apply text-6xl font-bold;
+}
+
+.hero-text-2 {
+  @apply text-3xl font-bold;
+}
+
+.contact-grid {
+  @apply grid grid-cols-2 m-10;
+}
+
+.send-button {
+  @apply font-extralight  mt-5 border border-white p-2 rounded-lg;
+}
+
+.send-button:active {
+  @apply bg-white text-black;
+}
+
+/* Styles for medium screens (481px to 768px) */
+@media (min-width: 481px) and (max-width: 800px) {
+  /* CSS rules for medium screens */
+
+  .ul-responsive {
+    @apply pointer-events-none h-0 opacity-0;
+  }
+  .nav-items-responsive {
+    @apply w-0;
+  }
+  .hamburger-icon {
+    @apply opacity-100 ml-10 cursor-pointer;
+  }
+  .title-responsive {
+    @apply gap-40;
+  }
+
+  .home-grid {
+    @apply flex flex-col;
+  }
+
+  .image-grid {
+    @apply h-full p-7 mx-5;
+  }
+
+  .image-grid img {
+  }
+
+  .hero-text {
+    @apply text-4xl font-bold;
+  }
+
+  .contact-grid {
+    @apply flex flex-col-reverse;
+  }
+}
+/* Styles for small screens (up to 480px) */
+@media (max-width: 480px) {
+  /* CSS rules for small screens */
+  .ul-responsive {
+    @apply pointer-events-none h-0 opacity-0;
+  }
+
+  .hamburger-icon {
+    @apply opacity-100 cursor-pointer;
+  }
+  .nav-items-responsive {
+    @apply w-0 pointer-events-auto z-10;
+  }
+  .hamburger-icon {
+    @apply opacity-100 ml-4;
+  }
+  .title-responsive {
+    @apply gap-0;
+  }
+
+  .image-grid {
+    @apply h-0 opacity-0 z-[-1];
+  }
+  .home-grid {
+    @apply flex flex-col mt-[-5rem];
+  }
+  .text-grid {
+    @apply flex flex-col text-sm;
+  }
+
+  .hero-text {
+    @apply text-3xl font-bold;
+  }
+
+  .hero-text-2 {
+    @apply text-xl font-bold;
+  }
+
+  .hero-title-2 {
+    @apply text-sm font-light m-5;
+  }
+
+  .contact-grid {
+    @apply flex flex-col-reverse;
+  }
 }
