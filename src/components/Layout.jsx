@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="bg-black text-white ">
       <Navbar />
       {/* THE PAGES ARE RENDERED HERE */}
-      <div className="mt-[6.5rem] ">
+      <div className="mt-[6rem] ">
         <Outlet />
       </div>
 

@@ -19,8 +19,6 @@ export default function Search() {
     setVisible((prev) => prev + 3);
   };
 
-  let resultArray = [];
-
   async function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
@@ -67,21 +65,21 @@ export default function Search() {
       transition={{ duration: 0.5 }}
     >
       <form className="h-screen mt-20" onSubmit={handleSubmit}>
-        <div className="p-5 text-[6rem] text-slate-300 m-10">Search.</div>
-        <div className="float-right">
-          <Lottie animationData={search} className="w-1/2" />
+        <div className="search-text">Search.</div>
+        <div className="search-list">
+          <Lottie animationData={search} className="search-img" />
+          <input
+            type="text"
+            required
+            value={input}
+            className="bg-inherit border border-white m-10 p-5 italic h-20"
+            placeholder="example type 'chest'"
+            onChange={(e) => {
+              setInput(e.target.value);
+              console.log(input);
+            }}
+          />
         </div>
-        <input
-          type="text"
-          required
-          value={input}
-          className="bg-inherit border border-white m-10 p-5 italic"
-          placeholder="example type 'chest'"
-          onChange={(e) => {
-            setInput(e.target.value);
-            console.log(input);
-          }}
-        />
       </form>
 
       {exerciseDiv.length === 0 && (
@@ -98,7 +96,7 @@ export default function Search() {
             <h1 className="mt-[-20rem]">Loading {input}</h1>
           </div>
         ) : (
-          <div className="grid grid-cols-3 ">
+          <div className="search-result">
             {exerciseDiv.slice(0, visible).map((exercise, index) => (
               <div
                 key={index}

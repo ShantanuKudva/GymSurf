@@ -1,15 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { calcLength, motion } from "framer-motion";
-import ppl from "../assets/pdf/ppl.pdf";
-import brosplit from "../assets/pdf/brosplit.pdf";
+import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import exercise from "../assets/exercise.json";
 import youtub from "../assets/youtube.json";
 export default function Programs() {
-  let [pdf, setPdf] = useState(null);
-  let [display, setDisplay] = useState(null);
-  const pdfRef = useRef(null);
-
   const [dropdownVisible, setDropdownVisible] = useState([false, false]);
 
   // Function to toggle dropdown visibility
@@ -28,8 +22,8 @@ export default function Programs() {
       exit={{ transition: { duration: 0.5 } }}
       className=""
     >
-      <div className="flex justify-around m-10">
-        <Lottie animationData={exercise} className="w-full m-10" />
+      <div className="gym-essential-first p-10">
+        <Lottie animationData={exercise} className="responsive-img" />
         <div className="m-auto mx-10">
           <h1 className="text-4xl font-bold ">.gym-essentials</h1>
           <h2 className="text-xl font-light mt-10">
@@ -39,9 +33,9 @@ export default function Programs() {
         </div>
       </div>
 
-      <div className="mt-10 grid grid-cols-2 gap-5 m-10">
+      <div className="answer-grid">
         <ul className="m-10">
-          <li className="text-lg font-bold">
+          <li className="text-lg font-bold ">
             Where do I start? It can be overwhelming to step into a gym for the
             first time. You might wonder which exercises to begin with or how to
             structure your workouts?
@@ -54,7 +48,7 @@ export default function Programs() {
                 height: dropdownVisible[0] ? "auto" : 0,
               }}
               exit={{ opacity: 0, height: 0 }}
-              className="font-light"
+              className=" bg-white text-black p-2 rounded-b-lg mt-3"
             >
               <p>
                 I have it all covered. You can start off by checking out the
@@ -67,7 +61,7 @@ export default function Programs() {
           <br />
           <button
             onClick={() => toggleDropdown(0)}
-            className="bg-white p-3 rounded-lg text-black"
+            className="bg-white p-3 rounded-lg text-black block m-auto"
           >
             {dropdownVisible[0] ? "Hide" : "Show"} answer
           </button>
@@ -84,9 +78,9 @@ export default function Programs() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="font-light"
+              className=" bg-white text-black p-2 rounded-b-lg mt-3"
             >
-              <p className="font-light">
+              <p>
                 When it comes to choosing gym attire, prioritize comfort and
                 functionality. Opt for clothes and footwear that allow you to
                 move freely and provide proper support. Find the right fit,
@@ -102,7 +96,7 @@ export default function Programs() {
           <br />
           <button
             onClick={() => toggleDropdown(1)}
-            className="bg-white p-3 rounded-lg text-black"
+            className="bg-white p-3 rounded-lg text-black block m-auto"
           >
             {dropdownVisible[1] ? "Hide" : "Show"} answer
           </button>
@@ -119,9 +113,9 @@ export default function Programs() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="font-light"
+              className=" bg-white text-black p-2 rounded-b-lg mt-3"
             >
-              <p className="font-light">
+              <p>
                 When it comes to using gym machines and equipment, it's
                 important to start with proper form and technique. The GymApp
                 provides a dedicated section that guides beginners on how to use
@@ -136,7 +130,7 @@ export default function Programs() {
           <br />
           <button
             onClick={() => toggleDropdown(2)}
-            className="bg-white p-3 rounded-lg text-black"
+            className="bg-white p-3 rounded-lg text-black block m-auto"
           >
             {dropdownVisible[2] ? "Hide" : "Show"} answer
           </button>
@@ -153,9 +147,9 @@ export default function Programs() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="font-light"
+              className=" bg-white text-black p-2 rounded-b-lg mt-3"
             >
-              <p className="font-light">
+              <p>
                 Proper nutrition is a key component of a successful fitness
                 journey. It's important to understand the role of macronutrients
                 (carbohydrates, proteins, and fats) and micronutrients (vitamins
@@ -171,7 +165,7 @@ export default function Programs() {
           <br />
           <button
             onClick={() => toggleDropdown(3)}
-            className="bg-white p-3 rounded-lg text-black"
+            className="bg-white p-3 rounded-lg text-black block m-auto"
           >
             {dropdownVisible[3] ? "Hide" : "Show"} answer
           </button>
@@ -188,9 +182,9 @@ export default function Programs() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="font-light"
+              className=" bg-white text-black p-2 rounded-b-lg mt-3"
             >
-              <p className="font-light">
+              <p>
                 To achieve specific fitness goals, having a structured workout
                 program is essential. Gymsurf offers tailored workout programs
                 designed to meet individual needs and requirements. These
@@ -208,7 +202,7 @@ export default function Programs() {
           <br />
           <button
             onClick={() => toggleDropdown(4)}
-            className="bg-white p-3 rounded-lg text-black"
+            className="bg-white p-3 rounded-lg text-black block m-auto"
           >
             {dropdownVisible[4] ? "Hide" : "Show"} answer
           </button>
@@ -224,9 +218,9 @@ export default function Programs() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="font-light"
+              className=" bg-white text-black p-2 rounded-b-lg mt-3"
             >
-              <p className="font-light">
+              <p>
                 Staying motivated and consistent with your fitness routine can
                 be a challenge. It's important to find ways to stay engaged and
                 committed to your goals. Whether it's tracking your progress,
@@ -243,7 +237,7 @@ export default function Programs() {
           <br />
           <button
             onClick={() => toggleDropdown(5)}
-            className="bg-white p-3 rounded-lg text-black"
+            className="bg-white p-3 rounded-lg text-black block m-auto"
           >
             {dropdownVisible[5] ? "Hide" : "Show"} answer
           </button>
@@ -261,9 +255,9 @@ export default function Programs() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="font-light"
+              className=" bg-white text-black p-2 rounded-b-lg mt-3"
             >
-              <p className="font-light">
+              <p>
                 When it comes to nutrition and supplements, it's important to
                 focus on getting enough protein from natural sources like lean
                 meats, poultry, fish, eggs, dairy products, legumes, and nuts.
@@ -280,72 +274,75 @@ export default function Programs() {
           <br />
           <button
             onClick={() => toggleDropdown(6)}
-            className="bg-white p-3 rounded-lg text-black"
+            className="bg-white p-3 rounded-lg text-black block m-auto"
           >
             {dropdownVisible[6] ? "Hide" : "Show"} answer
           </button>
         </ul>
       </div>
 
-      <div className="flex justify-around m-10 gap-3">
+      <div className="flex  justify-around m-10 gap-3">
         <div className=" mt-20 ">
-          <h1 className="text-4xl font-bold text-center ">YouTubers.</h1>
+          <h1 className="text-4xl font-bold text-center flex flex-col-reverse">
+            YouTubers.
+          </h1>
+          <Lottie animationData={youtub} className="block m-auto h-52" />
           <div className="mt-10 font-light text-lg text-left">
             A special mention of a few youtubers who are informative and fun to
             watch
           </div>
+          <div className="list">
+            <ul className="list-decimal mt-10">
+              <h1 className="text-xl font-bold my-2">
+                Nutrition and technique focused channel
+              </h1>
 
-          <ul className="list-decimal mt-10">
-            <h1 className="text-xl font-bold my-2">
-              Nutrition and technique focused channel
-            </h1>
+              <li>
+                <a href="">Jeff Nippard :</a>
+              </li>
+              <li>Jeet Salal :</li>
+              <li>Jeremy Either: </li>
+              <li>Eugene Teo :</li>
+              <li>Davis Diley :</li>
+              <li>Noel Deyzel :</li>
+              <li>Chris Heria (Mostly for claisthenics) :</li>
+              <li>Max Euceda :</li>
+              <li>Scott Herman :</li>
+              <li>Ryan Humiston :</li>
+              <li>Joe Fazer: </li>
+            </ul>
 
-            <li>
-              <a href="">Jeff Nippard :</a>
-            </li>
-            <li>Jeet Salal :</li>
-            <li>Jeremy Either: </li>
-            <li>Eugene Teo :</li>
-            <li>Davis Diley :</li>
-            <li>Noel Deyzel :</li>
-            <li>Chris Heria (Mostly for claisthenics) :</li>
-            <li>Max Euceda :</li>
-            <li>Scott Herman :</li>
-            <li>Ryan Humiston :</li>
-            <li>Joe Fazer: </li>
-          </ul>
+            <ul className="list-decimal mt-10">
+              <h1 className="text-xl font-bold my-2">Nutrition Focused</h1>
 
-          <ul className="list-decimal mt-10">
-            <h1>Nutrition Focused</h1>
+              <li>Andrew Huberman :</li>
+              <li>Mario Tomic: </li>
+              <li>Muscle For Life :</li>
+              <li>Dr Mikhail Lewis: </li>
+            </ul>
 
-            <li>Andrew Huberman :</li>
-            <li>Mario Tomic: </li>
-            <li>Muscle For Life :</li>
-            <li>Dr Mikhail Lewis: </li>
-          </ul>
+            <ul className="list-decimal mt-10">
+              <h1 className="text-xl font-bold my-2">Vlogs</h1>
 
-          <ul className="list-decimal mt-10">
-            <h1>Vlogs</h1>
+              <li>Saket Gokhale :</li>
+              <li>David Laid :</li>
+              <li>Browney: </li>
+              <li>Matt Does Fitness :</li>
+              <li>Alex Eubank :</li>
+              <li>NotSoFit: </li>
+              <li>Will Tennyson :</li>
+              <li>Nick Bare (Mostly Marathon content) :</li>
+            </ul>
 
-            <li>Saket Gokhale :</li>
-            <li>David Laid :</li>
-            <li>Browney: </li>
-            <li>Matt Does Fitness :</li>
-            <li>Alex Eubank :</li>
-            <li>NotSoFit: </li>
-            <li>Will Tennyson :</li>
-            <li>Nick Bare (Mostly Marathon content) :</li>
-          </ul>
+            <ul className="list-decimal mt-10">
+              <h1 className="text-xl font-bold my-2">Peak Motivation</h1>
 
-          <ul className="list-decimal mt-10">
-            <h1>Peak Motivation</h1>
-
-            <li>The Tren Twins :</li>
-            <li>Lexx Little :</li>
-            <li>DAMO: </li>
-          </ul>
+              <li>The Tren Twins :</li>
+              <li>Lexx Little :</li>
+              <li>DAMO: </li>
+            </ul>
+          </div>
         </div>
-        <Lottie animationData={youtub} className="w-1/4 m-10" />
       </div>
     </motion.div>
   );
