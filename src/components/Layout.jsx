@@ -11,7 +11,7 @@ export default function Layout() {
         <Outlet />
       </div>
 
-      <footer className="text-center  ">Made with ♥ by Shantanu Kudva</footer>
+      <footer className="text-center p-5">Made with ♥ by Shantanu Kudva</footer>
     </div>
   );
 }

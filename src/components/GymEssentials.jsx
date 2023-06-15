@@ -292,54 +292,131 @@ export default function Programs() {
             watch
           </div>
           <div className="list">
-            <ul className="list-decimal mt-10">
+            <ul className="list-disc mt-10">
               <h1 className="text-xl font-bold my-2">
                 Nutrition and technique focused channel
               </h1>
 
               <li>
-                <a href="">Jeff Nippard :</a>
+                <a href="https://www.youtube.com/@JeffNippard">
+                  Jeff Nippard :
+                </a>
               </li>
-              <li>Jeet Salal :</li>
-              <li>Jeremy Either: </li>
-              <li>Eugene Teo :</li>
-              <li>Davis Diley :</li>
-              <li>Noel Deyzel :</li>
-              <li>Chris Heria (Mostly for claisthenics) :</li>
-              <li>Max Euceda :</li>
-              <li>Scott Herman :</li>
-              <li>Ryan Humiston :</li>
-              <li>Joe Fazer: </li>
+              <li>
+                <a href="youtube.com/@JeetSelalAesthetics">Jeet Selal :</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@JeremyEthier">
+                  Jeremy Either:
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@coacheugeneteo">
+                  Eugene Teo :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@davisdiley">Davis Diley :</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@noeldeyzel">Noel Deyzel :</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@chrisheria">
+                  Chris Heria (Mostly for claisthenics) :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@MaxEuceda7">Max Euceda :</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@ScottHermanFitness">
+                  Scott Herman :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@ryanhumiston">
+                  Ryan Humiston :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@joefazer">Joe Fazer: </a>
+              </li>
             </ul>
 
-            <ul className="list-decimal mt-10">
+            <ul className="list-disc mt-10">
               <h1 className="text-xl font-bold my-2">Nutrition Focused</h1>
 
-              <li>Andrew Huberman :</li>
-              <li>Mario Tomic: </li>
-              <li>Muscle For Life :</li>
-              <li>Dr Mikhail Lewis: </li>
+              <li>
+                <a href="https://www.youtube.com/@hubermanlab">
+                  Andrew Huberman :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@MarioTomicOfficial">
+                  Mario Tomic:{" "}
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@MikeMatthewsFitness">
+                  Muscle For Life :
+                </a>
+              </li>
             </ul>
 
-            <ul className="list-decimal mt-10">
+            <ul className="list-disc mt-10">
               <h1 className="text-xl font-bold my-2">Vlogs</h1>
 
-              <li>Saket Gokhale :</li>
-              <li>David Laid :</li>
-              <li>Browney: </li>
-              <li>Matt Does Fitness :</li>
-              <li>Alex Eubank :</li>
-              <li>NotSoFit: </li>
-              <li>Will Tennyson :</li>
-              <li>Nick Bare (Mostly Marathon content) :</li>
+              <li>
+                <a href="https://www.youtube.com/@SaketGokhaleVlogs">
+                  Saket Gokhale :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@DavidLaid ">David Laid :</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@Browney">Browney: </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@MattDoesFitness">
+                  Matt Does Fitness :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@officialalexeubank">
+                  Alex Eubank :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@NotSoFit">NotSoFit: </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@WillTennyson">
+                  Will Tennyson :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@nickbarefitness">
+                  Nick Bare (Mostly Marathon content) :
+                </a>
+              </li>
             </ul>
 
-            <ul className="list-decimal mt-10">
+            <ul className="list-disc mt-10">
               <h1 className="text-xl font-bold my-2">Peak Motivation</h1>
 
-              <li>The Tren Twins :</li>
-              <li>Lexx Little :</li>
-              <li>DAMO: </li>
+              <li>
+                <a href="https://www.youtube.com/@thetrentwins">
+                  The Tren Twins :
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@lexx.little">Lexx Little :</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@DAMIANTHEFATASS">DAMO:</a>{" "}
+              </li>
             </ul>
           </div>
         </div>

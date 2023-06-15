@@ -84,7 +84,7 @@ export default function Search() {
 
       {exerciseDiv.length === 0 && (
         <div className="col-span-full">
-          <Lottie animationData={no} className="w-1/4 mt-[-10rem] m-auto" />
+          <Lottie animationData={no} className="w-56 mt-[-10rem] m-auto my" />
           <h1 className="mt-10 mb-10 text-center font-light text-3xl">
             Nothing to show here
           </h1>

@@ -2,12 +2,12 @@ import { React } from "react";
 import { motion } from "framer-motion";
 import img1 from "../assets/girl-squat.avif";
 import img2 from "../assets/tricep-pushdowns.avif";
-import img3 from "../assets/man-pushweight.avif";
+
 import img4 from "../assets/girl-backsquat.avif";
 import img5 from "../assets/man-alone.avif";
 import Lottie from "lottie-react";
 import phoneAnimation from "../assets/hand-animation.json";
-import contactRotating from "../assets/Logo rotating.json";
+
 import Contact from "./Contact.jsx";
 
 export default function Home() {
